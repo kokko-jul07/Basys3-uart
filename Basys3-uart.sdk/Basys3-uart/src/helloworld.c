@@ -46,15 +46,20 @@
  */
 
 #include <stdio.h>
+#include <microblaze_sleep.h>
 #include "platform.h"
 #include "xil_printf.h"
 
-
 int main()
 {
+	int i;
+
     init_platform();
 
-    print("Hello World\n\r");
+    for ( i=0; i<1000; i++ ) {
+    	printf( "Hello World (%d)\r\n", i );
+    	MB_Sleep( 1000 );
+    }
 
     cleanup_platform();
     return 0;

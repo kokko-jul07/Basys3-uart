@@ -149,8 +149,8 @@ set_property PACKAGE_PIN W4 [get_ports {AN[3]}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {VGA_VS}]
 
 ##Uart
-set_property PACKAGE_PIN B18 [get_ports {RXD}]
+set_property PACKAGE_PIN B16 [get_ports {RXD}]
 set_property IOSTANDARD LVCMOS33 [get_ports {RXD}]
-set_property PACKAGE_PIN A18 [get_ports {TXD}]
+set_property PACKAGE_PIN A14 [get_ports {TXD}]
 set_property IOSTANDARD LVCMOS33 [get_ports {TXD}]
 
